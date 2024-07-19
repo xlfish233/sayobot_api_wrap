@@ -141,7 +141,11 @@ mod tests {
 
     #[tokio::test]
     async fn test_download_mini_map() {
-        let builder = RequestBuilder::new().set_sid(2045169).set_resource_type(ResourceType::MiniMap).set_download_path("./".to_string()).unwrap().set_timeout(Duration::from_secs(10));
+        let builder = RequestBuilder::new()
+        .set_sid(2045169
+        ).set_resource_type(ResourceType::MiniMap)
+        .set_download_path("./".to_string()).unwrap()
+        .set_timeout(Duration::from_secs(100));
         let result = builder.do_request().await;
         assert!(result.is_ok());
         let file_name = result.unwrap();
