@@ -36,4 +36,5 @@ async fn main() -> Result<(), anyhow::Error> {
     let beatmap_info = BeatmapInfoV2::new(beatmap_id).await?;
     println!("{:?}", beatmap_info);
     Ok(())
-}use sayobot_api_wrap::beatmap_info_v2::BeatmapInfoV2;
+}
+```
