@@ -24,7 +24,9 @@
 ```toml
 [dependencies]
 sayobot_api_wrap = { git = "https://github.com/your-repo/sayobot_api_wrap.git", branch = "main" }
+```
 
+```rust
 use sayobot_api_wrap::beatmap_info_v2::BeatmapInfoV2;
 
 
