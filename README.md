@@ -23,7 +23,7 @@
 
 ```toml
 [dependencies]
-sayobot_api_wrap = { git = "https://github.com/your-repo/sayobot_api_wrap.git", branch = "main" }
+sayobot_api_wrap = { git = "https://github.com/xlfish233/sayobot_api_wrap.git", branch = "main" }
 ```
 
 ```rust
