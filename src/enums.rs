@@ -1,3 +1,4 @@
+use serde::{Deserialize, Serialize};
 use bitflags::bitflags;
 
 bitflags! {
@@ -56,4 +57,17 @@ bitflags! {
         const TAGS = 0b00010000;
         const SOURCE = 0b00100000;
     }
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub enum RequestType {
+    #[serde(rename = "1")]
+    Hot,
+    #[serde(rename = "2")]
+    New,
+    #[serde(rename = "3")]
+    Packs,
+    #[serde(rename = "4")]
+    Search,
 }

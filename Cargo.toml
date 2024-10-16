@@ -8,14 +8,19 @@ edition = "2021"
 [dependencies]
 bitflags = "2.5.0"
 serde = { version = "1.0.*", features = ["derive"] }
-serde_with = "3.9.*"
+serde_with = "3.11.0"
 serde_json = "1.0.*"
 serde_url_params = "0.2.1"
 #async runtime
-tokio = { version = "1.38.*", features = ["full"] }
+tokio = { version = "1.40.0", features = ["full"] }
 #async http client
 reqwest = { version = "0.12.*", features = ["json", "stream"] }
 anyhow = "1.0.*"
 
 futures = { version = "0.3.*", features = ["async-await"] }
 urlencoding = "2.1.*"
+derive_builder = "0.20.2"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+# https://crates.io/crates/bon
+bon = "2.3.0"
